@@ -1,0 +1,57 @@
+div p:first-of-type {
+  background-color: red;
+}
+
+div p:nth-of-type(n+2) {
+  background-color: brown;
+}
+/* nav ul li{
+  background-color: aqua;
+  list-style: none;
+  content: " ";
+  height: 1px;
+  width: 0%;
+  margin: auto;
+  display: block;
+  background-color: black;
+  transition: 0.5s;
+
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+ 
+  align-items: center;
+} */
+nav ul {
+  background-color: aqua;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* space-around
+  space-between */
+
+}
+nav ul li {
+
+  /* margin: auto; */
+  /* display: inline-block; */
+  list-style: none;
+  cursor: pointer;
+}
+
+nav ul li::after {
+  content: " ";
+  height: 2px;
+  width: 0px;
+  margin: auto;
+  display: block;
+  background-color: black;
+  transition: 0.5s;
+
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
