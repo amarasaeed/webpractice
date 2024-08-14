@@ -33,6 +33,21 @@ let img=document.querySelector('img')
 //         }
 
 //         Data();
+async function Data() {
+            try {
+                let response = await fetch('https://api.github.com/users/amarasaeed');
+                let data = await response.json();
+
+                name.innerHTML = data.login;
+                followers.innerHTML = data.followers;
+                bio.innerHTML = data.bio;
+               img.src = data.avatar_url;
+            } catch (error) {
+                console.log('Error:', error);
+            }
+        }
+
+        Data();
     </script>
 </body>
 </html>
