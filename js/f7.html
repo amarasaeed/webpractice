@@ -18,21 +18,6 @@ let followers=document.querySelector('.followers')
 let bio=document.querySelector('.bio')
 let img=document.querySelector('img')
 
-// async function Data() {
-//             try {
-//                 let response = await fetch('https://api.github.com/users/amarasaeed');
-//                 let data = await response.json();
-
-//                 name.innerHTML = data.login;
-//                 followers.innerHTML = data.followers;
-//                 bio.innerHTML = data.bio;
-//                img.src = data.avatar_url;
-//             } catch (error) {
-//                 console.log('Error:', error);
-//             }
-//         }
-
-//         Data();
 async function Data() {
             try {
                 let response = await fetch('https://api.github.com/users/amarasaeed');
@@ -48,6 +33,7 @@ async function Data() {
         }
 
         Data();
+
     </script>
 </body>
 </html>
